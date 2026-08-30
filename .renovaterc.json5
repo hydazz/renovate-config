@@ -1,6 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["local>home-operations/renovate-config"],
+  extends: ["local>hydazz/renovate-config"],
   packageRules: [
     {
       description: "Auto-merge non-major updates, but only after every CI check passes",

@@ -12,12 +12,6 @@
       commitMessageExtra: "({{currentVersion}} → {{newVersion}})",
     },
     {
-      matchUpdateTypes: ["minor"],
-      matchCurrentVersion: "/^v?0\\./",
-      semanticCommitType: "feat",
-      commitMessageExtra: "({{currentVersion}} → {{newVersion}})",
-    },
-    {
       matchUpdateTypes: ["patch"],
       semanticCommitType: "fix",
       commitMessageExtra: "({{currentVersion}} → {{newVersion}})",
@@ -31,11 +25,6 @@
       matchDatasources: ["docker"],
       semanticCommitScope: "container",
       commitMessageTopic: "image {{depName}}",
-    },
-    {
-      matchDatasources: ["helm"],
-      semanticCommitScope: "helm",
-      commitMessageTopic: "chart {{depName}}",
     },
     {
       matchManagers: ["gomod"],
